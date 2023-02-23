@@ -29,11 +29,11 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    saveBook: async (parent, { userId, book }) => {
+    saveBook: async (parent, { userId, bookId }) => {
       return User.findOneAndUpdate(
         { _id: userId },
         {
-          $addToSet: { savedBooks: book },
+          $addToSet: { savedBooks: bookId },
         },
         {
           new: true,
@@ -41,7 +41,7 @@ const resolvers = {
         }
       );
     },
-    deleteBook: async (parent, { userId, bookId }) => {
+    removeBook: async (parent, { userId, bookId }) => {
       return User.findOneAndUpdate(
         { _id: userId },
         { $pull: { savedBooks: { bookId: bookId } } },
