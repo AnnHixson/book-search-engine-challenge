@@ -48,7 +48,7 @@ const typeDefs = gql`
 
   type Query {
     # me: Which returns a User type.
-    me: User
+    users: User
   }
 
   type Mutation {
@@ -56,7 +56,7 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
 
     # addUser: Accepts a username, email, and password as parameters; returns an Auth type.
-    addUser(username: String, email: String, password: String): Auth
+    createUser(username: String, email: String, password: String): Auth
 
     # saveBook: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a User type. (Look into creating what's known as an input type to handle all of these parameters!)
     saveBook(authors: [String], description: String, title: String, bookId: String, image: String, link: String): User
