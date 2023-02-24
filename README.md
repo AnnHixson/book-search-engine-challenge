@@ -19,21 +19,17 @@ To run the program:
 
 ## Usage
 
-Upon navigating to the webpage, the user will see the text editor. There is an option to install the application on the user's desktop. The user can edit their text in the space provided as they see fit, and it will be saved to the database. When they reload, or close and reopen the app, the text from the databasse will appear in the editor.
+Upon navigating to the webpage...
 
 Here is a screenshot of the application:
 
-![text-editor-challenge-screenshot](./images/text-editor-challenge-screenshot.png)
+![screenshot]()
 
-Here is the link to the deployed application: [https://cryptic-mountain-94181.herokuapp.com/](https://cryptic-mountain-94181.herokuapp.com/)
+Here is the link to the deployed application: []()
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+I followed the examples in the coursework of this class closely
 
 ## License
 
